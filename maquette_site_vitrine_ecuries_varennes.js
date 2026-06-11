@@ -1,59 +1,5 @@
 const includes = document.querySelectorAll('[data-include]');
-
-const headerMarkup = `
-  <header class="nav" aria-label="En-tête du site">
-    <a class="logo" href="../home/" aria-label="Écuries des Varennes">
-      <img src="../img/logo_ecurie_des_varennes.png" alt="Écuries des Varennes" width="1280" height="917" decoding="async" />
-    </a>
-    <nav aria-label="Navigation principale">
-      <ul>
-        <li><a data-nav="home" href="../home/">Accueil</a></li>
-        <li><a data-nav="activities" href="../nos-activites/">Nos activités</a></li>
-        <li><a data-nav="domain" href="../le-domaine/">Le domaine</a></li>
-        <li><a data-nav="gallery" href="../galerie/">Galerie</a></li>
-        <li><a data-nav="contact" href="../contact/">Contact</a></li>
-      </ul>
-    </nav>
-    <a href="../contact/" class="cta">Réserver</a>
-  </header>
-`;
-
-const footerMarkup = `
-  <footer class="footer" aria-label="Pied de page">
-    <div class="foot-grid">
-      <div>
-        <a class="logo-f" href="../home/" aria-label="Écuries des Varennes">
-          <img src="../img/logo_ecurie_des_varennes_N&B.png" alt="Écuries des Varennes" width="1280" height="917" decoding="async" />
-        </a>
-        <div class="tag">Le cheval au cœur de nos activités</div>
-        <div class="socials" aria-label="Réseaux sociaux">
-          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="ti ti-brand-instagram" aria-hidden="true"></i></a>
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="ti ti-brand-facebook" aria-hidden="true"></i></a>
-        </div>
-      </div>
-      <div>
-        <h5>Nous trouver</h5>
-        <p><a class="inline-link" href="https://www.chateau-des-varennes.fr" target="_blank" rel="noopener noreferrer">Château de Varennes</a><br />31450 Varennes<br />Haute-Garonne</p>
-        <p><a class="inline-link" href="https://www.chateau-des-varennes.fr" target="_blank" rel="noopener noreferrer">Visiter le site du château</a></p>
-      </div>
-      <div>
-        <h5>Nous contacter</h5>
-        <p>ecuriesdesvarennes31@gmail.com</p>
-        <p>+33 (0)X XX XX XX XX</p>
-      </div>
-    </div>
-    <div class="credits" aria-label="Crédits du site">
-      <p>Designé Perrine Vivier</p>
-      <p>Developped by <a href="https://github.com/onlythejoe" target="_blank" rel="noopener noreferrer">Electronic Artefacts</a> (electronicartefacts)</p>
-    </div>
-    <div class="legal-links" aria-label="Liens juridiques">
-      <a href="../mentions-legales/">Mentions légales</a>
-      <a href="../politique-de-confidentialite/">Politique de confidentialité</a>
-      <a href="../politique-de-cookies/">Cookies</a>
-    </div>
-    <div class="copy">© 2026 Écuries des Varennes — Tous droits réservés</div>
-  </footer>
-`;
+const CONTACT_EMAIL = 'ecuriesdesvarennes31@gmail.com';
 
 async function loadInclude(node) {
   try {
@@ -62,9 +8,8 @@ async function loadInclude(node) {
       throw new Error(`Failed to load include: ${node.dataset.include}`);
     }
     node.outerHTML = await response.text();
-    return;
   } catch {
-    node.outerHTML = node.dataset.include.includes('header') ? headerMarkup : footerMarkup;
+    console.warn(`Unable to load include: ${node.dataset.include}`);
   }
 }
 
@@ -88,18 +33,84 @@ function setActiveNav() {
   });
 }
 
-function enhanceForms() {
-  document.querySelectorAll('form').forEach((form) => {
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
-    });
+function setupContactForm() {
+  const form = document.querySelector('[data-contact-form]');
+  if (!form) return;
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    if (!form.reportValidity()) {
+      return;
+    }
+
+    const formData = new FormData(form);
+    const rawSubject = String(formData.get('subject') || '').trim();
+    const subject = rawSubject || 'Demande depuis le site';
+    const name = String(formData.get('name') || '').trim();
+    const phone = String(formData.get('phone') || '').trim();
+    const email = String(formData.get('email') || '').trim();
+    const message = String(formData.get('message') || '').trim();
+
+    const bodyLines = [
+      `Nom: ${name}`,
+      `Email: ${email}`,
+      phone ? `Téléphone: ${phone}` : null,
+      '',
+      message,
+    ].filter((line) => line !== null);
+
+    const mailto = new URL(`mailto:${CONTACT_EMAIL}`);
+    mailto.searchParams.set('subject', subject);
+    mailto.searchParams.set('body', bodyLines.join('\n'));
+
+    window.location.href = mailto.toString();
   });
+}
+
+function setupHeroParallax() {
+  const hero = document.querySelector('.page-hero--banner');
+  if (!hero) return;
+
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const isMobileLayout = window.matchMedia('(max-width: 1024px)');
+  if (reducedMotion.matches || isMobileLayout.matches) {
+    hero.style.setProperty('--banner-bg-shift', '0px');
+    hero.style.setProperty('--banner-horse-shift', '0px');
+    return;
+  }
+
+  let ticking = false;
+  const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+
+  const update = () => {
+    ticking = false;
+    const heroTop = hero.offsetTop || 0;
+    const heroHeight = Math.max(hero.offsetHeight || 1, 1);
+    const viewportHeight = Math.max(window.innerHeight || 1, 1);
+    const travel = Math.max(heroHeight - viewportHeight * 0.25, 1);
+    const progress = clamp(((window.scrollY || 0) - heroTop + viewportHeight * 0.25) / travel, 0, 1);
+
+    hero.style.setProperty('--banner-bg-shift', `${Math.round(progress * -32)}px`);
+    hero.style.setProperty('--banner-horse-shift', `${Math.round(progress * 10)}px`);
+  };
+
+  const onScroll = () => {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(update);
+  };
+
+  update();
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
 }
 
 async function init() {
   await loadIncludes();
   setActiveNav();
-  enhanceForms();
+  setupContactForm();
+  setupHeroParallax();
 }
 
 if (document.readyState === 'loading') {

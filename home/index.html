@@ -3,19 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Écuries des Varennes - site vitrine." />
+    <meta name="description" content="Écuries des Varennes : balades à cheval, centre équestre familial, ventes aux enchères et accompagnement équestre dans le Lauragais." />
     <meta name="robots" content="index,follow" />
     <meta name="theme-color" content="#143d48" />
     <meta property="og:site_name" content="Écuries des Varennes" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Écuries des Varennes | Accueil" />
-    <meta property="og:description" content="Balades, centre équestre, ventes et accompagnement aux Écuries des Varennes." />
-    <meta property="og:image" content="../img/logo_ecurie_des_varennes.png" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:description" content="Balades, cours, ventes et accompagnement équestre dans un domaine vivant et familial au cœur du Lauragais." />
+    <meta property="og:image" content="../banner.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
     <title>Écuries des Varennes | Accueil</title>
     <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="preload" as="image" href="../banner.jpg" fetchpriority="high" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Allura&family=Montserrat:wght@300;400;500&display=swap" />
     <link rel="stylesheet" href="https://unpkg.com/@tabler/icons-webfont@latest/tabler-icons.min.css" />
     <link rel="stylesheet" href="../maquette_site_vitrine_ecuries_varennes.css?v=5" />
   </head>
@@ -23,13 +26,19 @@
     <a class="skip-link" href="#content">Aller au contenu</a>
     <div data-include="../partials/header.html"></div>
     <main id="content">
-      <section class="page-hero">
-        <div class="small">Au cœur du Lauragais</div>
-        <h1>Écuries des Varennes</h1>
-        <p>Balades en pleine nature, centre équestre familial, ventes aux enchères et accompagnement dans vos projets d'acquisition équestre. Un lieu authentique où chaque cheval a sa place.</p>
-        <div class="btns">
-          <a href="../nos-activites/" class="btn btn-p">Découvrir nos activités</a>
-          <a href="../contact/" class="btn btn-s">Réserver une balade</a>
+      <section class="page-hero page-hero--banner">
+        <div class="page-hero__copy">
+          <div class="small">Au cœur du Lauragais</div>
+          <h1>Écuries des Varennes</h1>
+          <p>Balades en pleine nature, apprentissage à cheval, ventes aux enchères et accompagnement dans vos projets d'acquisition. Ici, le cheval reste au centre et l'accueil se fait avec simplicité, précision et chaleur humaine.</p>
+          <div class="btns">
+            <a href="../nos-activites/" class="btn btn-p">Découvrir nos activités</a>
+            <a href="../contact/" class="btn btn-s">Réserver une balade</a>
+          </div>
+        </div>
+        <div class="page-hero__visual" aria-hidden="true">
+          <img class="page-hero__bg" src="../banner.jpg" alt="" decoding="async" fetchpriority="high" loading="eager" />
+          <img class="page-hero__horse" src="../img/horse.png" alt="" decoding="async" loading="eager" />
         </div>
       </section>
 
@@ -43,25 +52,25 @@
           <article class="card">
             <div class="icon"><i class="ti ti-tree"></i></div>
             <h3>Balades</h3>
-            <p>En main dès 3 ans, à cheval dès 7 ans, en calèche pour toute la famille et balades dégustation autour des produits locaux.</p>
+            <p>Promenades en main dès 3 ans, à cheval dès 7 ans, en calèche pour les groupes et sorties gourmandes autour des produits du territoire.</p>
             <a href="../nos-activites/" class="more">En savoir plus</a>
           </article>
           <article class="card">
             <div class="icon"><i class="ti ti-school"></i></div>
             <h3>Centre équestre</h3>
-            <p>Cours encadrés par une enseignante diplômée, initiation dès 2 ans, tous niveaux dans un lieu familial et authentique.</p>
+            <p>Une approche progressive, encadrée par une enseignante diplômée, pour découvrir, reprendre confiance ou progresser à son rythme.</p>
             <a href="../nos-activites/" class="more">En savoir plus</a>
           </article>
           <article class="card">
             <div class="icon"><i class="ti ti-gavel"></i></div>
             <h3>Ventes aux enchères</h3>
-            <p>Organisation de ventes équestres en partenariat avec des commissaires-priseurs spécialisés du monde du cheval.</p>
+            <p>Des ventes équestres menées avec méthode, en lien avec des commissaires-priseurs spécialisés et une sélection attentive des chevaux.</p>
             <a href="../nos-activites/" class="more">En savoir plus</a>
           </article>
           <article class="card">
             <div class="icon"><i class="ti ti-horse-toy"></i></div>
             <h3>Achat & vente</h3>
-            <p>Équidés sélectionnés avec soin, conseils personnalisés et accompagnement de A à Z dans vos projets d'acquisition.</p>
+            <p>Sélection, conseil, essai et suivi du dossier: un accompagnement complet pour avancer sereinement dans vos projets d'acquisition.</p>
             <a href="../nos-activites/" class="more">En savoir plus</a>
           </article>
         </div>
@@ -72,8 +81,8 @@
         <div class="about-text">
           <div class="eyebrow">Le domaine</div>
           <h2>Une tradition équestre au Château de Varennes</h2>
-          <p>Nichées au pied du <a class="inline-link" href="https://www.chateau-des-varennes.fr" target="_blank" rel="noopener noreferrer">Château de Varennes</a>, nos écuries cultivent depuis plusieurs générations une passion sincère pour le cheval. Cavalerie joyeuse, équipe attentionnée et cadre enchanteur composent un lieu où chacun trouve sa place.</p>
-          <p>Nous croyons en une équitation douce, respectueuse et accessible, fidèle à l'esprit du Lauragais.</p>
+          <p>Nichées au pied du <a class="inline-link" href="https://www.chateau-des-varennes.fr" target="_blank" rel="noopener noreferrer">Château de Varennes</a>, nos écuries se sont construites autour d’une idée simple: faire du cheval un vrai lieu de rencontre entre exigence, plaisir et attention portée au détail. La cavalerie, l’équipe et le cadre racontent ensemble une pratique vivante, ancrée dans le Lauragais.</p>
+          <p>Nous défendons une équitation douce mais précise, accessible sans être simplifiée, pour que chaque visiteur reparte avec une expérience nette et juste.</p>
           <div class="sign">L'équipe des Varennes</div>
         </div>
       </section>
@@ -82,24 +91,24 @@
         <div class="v">
           <i class="ti ti-heart-handshake"></i>
           <h4>Authenticité</h4>
-          <p>Un cadre familial à taille humaine, loin des grosses structures industrielles.</p>
+          <p>Une structure à taille humaine, où l’on prend le temps d’accueillir, d’expliquer et de faire les choses proprement.</p>
         </div>
         <div class="v">
           <i class="ti ti-certificate"></i>
           <h4>Professionnalisme</h4>
-          <p>Enseignante diplômée d'État et chevaux soigneusement sélectionnés.</p>
+          <p>Un encadrement diplômé, des chevaux choisis avec exigence et une attention constante à la sécurité comme au confort.</p>
         </div>
         <div class="v">
           <i class="ti ti-leaf"></i>
           <h4>Nature</h4>
-          <p>Balades en pleine campagne, à la découverte des paysages du Lauragais.</p>
+          <p>Un environnement ouvert, calme et vivant, pensé pour respirer, apprendre et se reconnecter au rythme du cheval.</p>
         </div>
       </section>
 
       <section class="cta-block">
         <div class="eyebrow">Venez nous rendre visite</div>
         <h2>Une balade, un cours, un projet ?</h2>
-        <div class="script">Nous serions ravies de vous accueillir</div>
+        <div class="script">Parlez-nous de votre envie, nous vous orienterons</div>
         <a href="../contact/" class="btn">Nous contacter</a>
       </section>
     </main>

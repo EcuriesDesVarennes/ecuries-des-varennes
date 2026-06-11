@@ -1,0 +1,146 @@
+- generic [active] [ref=e1]:
+  - link "Aller au contenu" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner "En-tête du site" [ref=e3]:
+    - link "Écuries des Varennes" [ref=e4] [cursor=pointer]:
+      - /url: ../home/
+      - img "Écuries des Varennes" [ref=e5]
+    - navigation "Navigation principale" [ref=e6]:
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Accueil" [ref=e9] [cursor=pointer]:
+            - /url: ../home/
+        - listitem [ref=e10]:
+          - link "Nos activités" [ref=e11] [cursor=pointer]:
+            - /url: ../nos-activites/
+        - listitem [ref=e12]:
+          - link "Le domaine" [ref=e13] [cursor=pointer]:
+            - /url: ../le-domaine/
+        - listitem [ref=e14]:
+          - link "Galerie" [ref=e15] [cursor=pointer]:
+            - /url: ../galerie/
+        - listitem [ref=e16]:
+          - link "Contact" [ref=e17] [cursor=pointer]:
+            - /url: ../contact/
+    - link "Réserver" [ref=e18] [cursor=pointer]:
+      - /url: ../contact/
+  - main [ref=e19]:
+    - generic [ref=e21]:
+      - generic [ref=e22]: Au cœur du Lauragais
+      - heading "Écuries des Varennes" [level=1] [ref=e23]
+      - paragraph [ref=e24]: Balades en pleine nature, centre équestre familial, ventes aux enchères et accompagnement dans vos projets d'acquisition équestre. Un lieu authentique où chaque cheval a sa place.
+      - generic [ref=e25]:
+        - link "Découvrir nos activités" [ref=e26] [cursor=pointer]:
+          - /url: ../nos-activites/
+        - link "Réserver une balade" [ref=e27] [cursor=pointer]:
+          - /url: ../contact/
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e31]: Notre savoir-faire
+        - heading "Nos activités" [level=2] [ref=e32]
+      - generic [ref=e34]:
+        - article [ref=e35]:
+          - heading "Balades" [level=3] [ref=e37]
+          - paragraph [ref=e38]: En main dès 3 ans, à cheval dès 7 ans, en calèche pour toute la famille et balades dégustation autour des produits locaux.
+          - link "En savoir plus" [ref=e39] [cursor=pointer]:
+            - /url: ../nos-activites/
+        - article [ref=e40]:
+          - heading "Centre équestre" [level=3] [ref=e42]
+          - paragraph [ref=e43]: Cours encadrés par une enseignante diplômée, initiation dès 2 ans, tous niveaux dans un lieu familial et authentique.
+          - link "En savoir plus" [ref=e44] [cursor=pointer]:
+            - /url: ../nos-activites/
+        - article [ref=e45]:
+          - heading "Ventes aux enchères" [level=3] [ref=e47]
+          - paragraph [ref=e48]: Organisation de ventes équestres en partenariat avec des commissaires-priseurs spécialisés du monde du cheval.
+          - link "En savoir plus" [ref=e49] [cursor=pointer]:
+            - /url: ../nos-activites/
+        - article [ref=e50]:
+          - heading "Achat & vente" [level=3] [ref=e52]
+          - paragraph [ref=e53]: Équidés sélectionnés avec soin, conseils personnalisés et accompagnement de A à Z dans vos projets d'acquisition.
+          - link "En savoir plus" [ref=e54] [cursor=pointer]:
+            - /url: ../nos-activites/
+    - generic [ref=e55]:
+      - generic [ref=e57]: — Photo du château —
+      - generic [ref=e58]:
+        - generic [ref=e59]: Le domaine
+        - heading "Une tradition équestre au Château de Varennes" [level=2] [ref=e60]
+        - paragraph [ref=e61]:
+          - text: Nichées au pied du
+          - link "Château de Varennes" [ref=e62] [cursor=pointer]:
+            - /url: https://www.chateau-des-varennes.fr
+          - text: ", nos écuries cultivent depuis plusieurs générations une passion sincère pour le cheval. Cavalerie joyeuse, équipe attentionnée et cadre enchanteur composent un lieu où chacun trouve sa place."
+        - paragraph [ref=e63]: Nous croyons en une équitation douce, respectueuse et accessible, fidèle à l'esprit du Lauragais.
+        - generic [ref=e64]: L'équipe des Varennes
+    - generic [ref=e65]:
+      - generic [ref=e66]:
+        - heading "Authenticité" [level=4] [ref=e67]
+        - paragraph [ref=e68]: Un cadre familial à taille humaine, loin des grosses structures industrielles.
+      - generic [ref=e69]:
+        - heading "Professionnalisme" [level=4] [ref=e70]
+        - paragraph [ref=e71]: Enseignante diplômée d'État et chevaux soigneusement sélectionnés.
+      - generic [ref=e72]:
+        - heading "Nature" [level=4] [ref=e73]
+        - paragraph [ref=e74]: Balades en pleine campagne, à la découverte des paysages du Lauragais.
+    - generic [ref=e75]:
+      - generic [ref=e76]: Venez nous rendre visite
+      - heading "Une balade, un cours, un projet ?" [level=2] [ref=e77]
+      - generic [ref=e78]: Nous serions ravies de vous accueillir
+      - link "Nous contacter" [ref=e79] [cursor=pointer]:
+        - /url: ../contact/
+  - contentinfo "Pied de page" [ref=e80]:
+    - generic [ref=e81]:
+      - region "Présentation" [ref=e82]:
+        - link "Écuries des Varennes" [ref=e83] [cursor=pointer]:
+          - /url: ../home/
+          - img "Écuries des Varennes" [ref=e84]
+        - generic [ref=e85]: Le cheval au cœur de nos activités
+        - generic "Réseaux sociaux" [ref=e86]:
+          - link "Instagram" [ref=e87] [cursor=pointer]:
+            - /url: https://www.instagram.com/
+          - link "Facebook" [ref=e88] [cursor=pointer]:
+            - /url: https://www.facebook.com/
+      - region "Le domaine" [ref=e89]:
+        - heading "Nous trouver" [level=5] [ref=e90]
+        - paragraph [ref=e91]:
+          - text: Au pied du
+          - link "Château de Varennes" [ref=e92] [cursor=pointer]:
+            - /url: https://www.chateau-des-varennes.fr
+          - text: .
+        - paragraph [ref=e93]:
+          - text: 31450 Varennes
+          - text: Haute-Garonne
+        - link "Visiter le site du château" [ref=e94] [cursor=pointer]:
+          - /url: https://www.chateau-des-varennes.fr
+      - region "Nous contacter" [ref=e95]:
+        - heading "Nous contacter" [level=5] [ref=e96]
+        - link "ecuriesdesvarennes31@gmail.com" [ref=e97] [cursor=pointer]:
+          - /url: mailto:ecuriesdesvarennes31@gmail.com
+        - link "+33 (0)X XX XX XX XX" [ref=e98] [cursor=pointer]:
+          - /url: tel:+33000000000
+        - link "Aller au formulaire de contact" [ref=e99] [cursor=pointer]:
+          - /url: ../contact/
+      - region "Liens utiles" [ref=e100]:
+        - heading "Liens utiles" [level=5] [ref=e101]
+        - link "Accueil" [ref=e102] [cursor=pointer]:
+          - /url: ../home/
+        - link "Nos activités" [ref=e103] [cursor=pointer]:
+          - /url: ../nos-activites/
+        - link "Le domaine" [ref=e104] [cursor=pointer]:
+          - /url: ../le-domaine/
+        - link "Galerie" [ref=e105] [cursor=pointer]:
+          - /url: ../galerie/
+    - generic "Crédits du site" [ref=e106]:
+      - paragraph [ref=e107]: Designé Perrine Vivier
+      - paragraph [ref=e108]:
+        - text: Developped by
+        - link "Electronic Artefacts" [ref=e109] [cursor=pointer]:
+          - /url: https://github.com/onlythejoe
+        - text: (electronicartefacts)
+    - generic "Liens juridiques" [ref=e110]:
+      - link "Mentions légales" [ref=e111] [cursor=pointer]:
+        - /url: ../mentions-legales/
+      - link "Politique de confidentialité" [ref=e112] [cursor=pointer]:
+        - /url: ../politique-de-confidentialite/
+      - link "Cookies" [ref=e113] [cursor=pointer]:
+        - /url: ../politique-de-cookies/
+    - generic [ref=e114]: © 2026 Écuries des Varennes — Tous droits réservés

@@ -1,0 +1,3 @@
+[  184161ms] [LOG] JQMIGRATE: Migrate is installed, version 3.4.1 @ https://www.chateau-des-varennes.fr/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1:1
+[  185307ms] [LOG] https://sociablekit.com/app/images/loader.svg @ https://widgets.sociablekit.com/google-reviews-old/widget.js:2
+[  186156ms] [LOG] Server Response: {status: success} @ https://widgets.sociablekit.com/google-reviews-old/widget.js:218

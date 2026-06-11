@@ -3,19 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Contact des Écuries des Varennes." />
+    <meta name="description" content="Contactez les Écuries des Varennes pour réserver une balade, poser une question ou parler d'un projet équestre." />
     <meta name="robots" content="index,follow" />
     <meta name="theme-color" content="#143d48" />
     <meta property="og:site_name" content="Écuries des Varennes" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Écuries des Varennes | Contact" />
-    <meta property="og:description" content="Contactez les Écuries des Varennes pour une balade, un cours ou un projet." />
+    <meta property="og:description" content="Contactez les Écuries des Varennes pour une balade, un cours ou un projet équestre. Réponse claire et rapide." />
     <meta property="og:image" content="../img/logo_ecurie_des_varennes.png" />
     <meta name="twitter:card" content="summary" />
     <title>Écuries des Varennes | Contact</title>
     <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Allura&family=Montserrat:wght@300;400;500&display=swap" />
     <link rel="stylesheet" href="https://unpkg.com/@tabler/icons-webfont@latest/tabler-icons.min.css" />
     <link rel="stylesheet" href="../maquette_site_vitrine_ecuries_varennes.css?v=5" />
   </head>
@@ -26,7 +28,7 @@
       <section class="page-hero">
         <div class="small">Nous joindre</div>
         <h1>Contact</h1>
-        <p>Pour réserver une balade, poser une question sur le centre équestre ou discuter d'un projet d'achat et de vente, écrivez-nous directement.</p>
+        <p>Pour réserver une balade, poser une question sur le centre équestre ou discuter d'un projet d'achat et de vente, écrivez-nous directement. Nous revenons vers vous avec une réponse claire, sans détour inutile.</p>
       </section>
 
       <section class="page-section">
@@ -34,16 +36,16 @@
           <div class="contact-stack">
             <article class="contact-card">
               <h3>Nous écrire</h3>
-              <p>Nous répondons rapidement aux demandes liées aux balades, aux cours et aux projets de vente ou d'acquisition.</p>
+              <p>Nous répondons rapidement aux demandes liées aux balades, aux cours et aux projets de vente ou d'acquisition. Plus votre message est précis, plus notre retour pourra l'être aussi.</p>
               <ul class="contact-list">
                 <li><strong>Email :</strong> ecuriesdesvarennes31@gmail.com</li>
-                <li><strong>Téléphone :</strong> +33 (0)X XX XX XX XX</li>
+                <li><strong>Téléphone :</strong> Numéro communiqué sur demande</li>
                 <li><strong>Adresse :</strong> <a class="inline-link" href="https://www.chateau-des-varennes.fr" target="_blank" rel="noopener noreferrer">Château de Varennes</a>, 31450 Varennes, Haute-Garonne</li>
               </ul>
             </article>
             <article class="contact-card">
               <h3>Horaires</h3>
-              <p>Les horaires d'accueil peuvent varier selon les activités et la saison. Merci de nous contacter avant votre venue.</p>
+              <p>Les horaires d'accueil peuvent varier selon les activités et la saison. Merci de nous contacter avant votre venue pour confirmer le bon créneau et éviter un déplacement inutile.</p>
               <ul class="contact-list">
                 <li>Lundi au samedi : sur rendez-vous</li>
                 <li>Dimanche : selon les activités programmées</li>
@@ -52,19 +54,19 @@
             <article class="contact-map">
               <div class="map-note">
                 <h3>Accès</h3>
-                <p>Cette zone est réservée à l'intégration d'une carte ou d'un plan d'accès si vous en ajoutez une plus tard.</p>
+                <p>Cette zone est réservée à l'intégration d'une carte ou d'un plan d'accès si vous en ajoutez une plus tard. En attendant, le plus simple reste de nous écrire ou de nous appeler.</p>
               </div>
             </article>
           </div>
 
           <div class="contact-form">
             <h3>Formulaire de contact</h3>
-            <p>Décrivez votre demande en quelques lignes. Nous vous répondrons avec les informations utiles et les disponibilités.</p>
-            <form action="#" method="post">
+            <p>Décrivez votre demande en quelques lignes. Nous vous répondrons avec les informations utiles, les disponibilités et la suite la plus adaptée.</p>
+            <form id="contact-form" action="mailto:ecuriesdesvarennes31@gmail.com" method="post" data-contact-form>
               <div class="form-grid">
                 <div class="field">
                   <label for="name">Nom</label>
-                  <input id="name" name="name" type="text" placeholder="Votre nom" autocomplete="name" />
+                  <input id="name" name="name" type="text" placeholder="Votre nom" autocomplete="name" required />
                 </div>
                 <div class="field">
                   <label for="phone">Téléphone</label>
@@ -72,7 +74,7 @@
                 </div>
                 <div class="field">
                   <label for="email">Email</label>
-                  <input id="email" name="email" type="email" placeholder="Votre adresse email" autocomplete="email" />
+                  <input id="email" name="email" type="email" placeholder="Votre adresse email" autocomplete="email" required />
                 </div>
                 <div class="field">
                   <label for="subject">Sujet</label>
@@ -81,7 +83,7 @@
               </div>
               <div class="field">
                 <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Parlez-nous de votre demande"></textarea>
+                <textarea id="message" name="message" placeholder="Parlez-nous de votre demande" required></textarea>
               </div>
               <button class="btn" type="submit">Envoyer la demande</button>
             </form>
@@ -92,7 +94,7 @@
       <section class="cta-block">
         <div class="eyebrow">Besoin d'un retour rapide ?</div>
         <h2>Écrivez-nous, nous vous répondons dès que possible</h2>
-        <div class="script">Le plus simple est souvent le plus direct</div>
+        <div class="script">Une demande claire reçoit toujours une réponse plus utile</div>
         <a href="mailto:ecuriesdesvarennes31@gmail.com" class="btn">Envoyer un email</a>
       </section>
     </main>
