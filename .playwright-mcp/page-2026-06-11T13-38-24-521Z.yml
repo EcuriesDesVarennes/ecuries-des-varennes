@@ -1,0 +1,98 @@
+- generic [active] [ref=e1]:
+  - link "Aller au contenu" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner "En-tête du site" [ref=e3]:
+    - link "Écuries des Varennes" [ref=e4] [cursor=pointer]:
+      - /url: ../home/
+      - img "Écuries des Varennes" [ref=e5]
+    - navigation "Navigation principale" [ref=e6]:
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Accueil" [ref=e9] [cursor=pointer]:
+            - /url: ../home/
+        - listitem [ref=e10]:
+          - link "Nos activités" [ref=e11] [cursor=pointer]:
+            - /url: ../nos-activites/
+        - listitem [ref=e12]:
+          - link "Le domaine" [ref=e13] [cursor=pointer]:
+            - /url: ../le-domaine/
+        - listitem [ref=e14]:
+          - link "Galerie" [ref=e15] [cursor=pointer]:
+            - /url: ../galerie/
+        - listitem [ref=e16]:
+          - link "Contact" [ref=e17] [cursor=pointer]:
+            - /url: ../contact/
+    - link "Réserver" [ref=e18] [cursor=pointer]:
+      - /url: ../contact/
+  - main [ref=e19]:
+    - generic [ref=e20]:
+      - generic [ref=e21]: Cadre juridique
+      - heading "Mentions légales" [level=1] [ref=e22]
+      - paragraph [ref=e23]: Informations légales relatives au site des Écuries des Varennes. Les champs d'identification non fournis sont volontairement indiqués comme à compléter pour éviter toute approximation.
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - heading "Éditeur du site" [level=3] [ref=e27]
+        - paragraph [ref=e28]: Écuries des Varennes
+        - paragraph [ref=e29]: "Adresse postale : Le Château, 31450 Varennes, Haute-Garonne"
+        - paragraph [ref=e30]: "Email : ecuriesdesvarennes31@gmail.com"
+        - paragraph [ref=e31]: "Téléphone : +33 (0)X XX XX XX XX"
+      - generic [ref=e32]:
+        - heading "Directeur de la publication" [level=3] [ref=e33]
+        - paragraph [ref=e34]: À compléter selon l'identité juridique de la structure exploitante.
+      - generic [ref=e35]:
+        - heading "Hébergement" [level=3] [ref=e36]
+        - paragraph [ref=e37]: Site susceptible d'être publié sur GitHub Pages, service d'hébergement statique de GitHub, Inc.
+        - paragraph [ref=e38]: Si vous souhaitez une version publiée avec identification complète de l'hébergeur, renseignez le nom légal exact et l'adresse du prestataire utilisé.
+      - generic [ref=e39]:
+        - heading "Propriété intellectuelle" [level=3] [ref=e40]
+        - paragraph [ref=e41]: L'ensemble des contenus présents sur le site, sauf mention contraire, reste la propriété des Écuries des Varennes ou de leurs ayants droit respectifs. Les textes, logos, photographies et éléments graphiques ne peuvent être reproduits sans autorisation préalable.
+      - generic [ref=e42]:
+        - heading "Crédits" [level=3] [ref=e43]
+        - paragraph [ref=e44]: Designé Perrine Vivier.
+        - paragraph [ref=e45]:
+          - text: Developped by
+          - link "Electronic Artefacts" [ref=e46] [cursor=pointer]:
+            - /url: https://github.com/onlythejoe
+          - text: (electronicartefacts).
+      - paragraph [ref=e48]: "Dernière mise à jour : juin 2026."
+  - contentinfo "Pied de page" [ref=e49]:
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - link "Écuries des Varennes" [ref=e52] [cursor=pointer]:
+          - /url: ../home/
+          - img "Écuries des Varennes" [ref=e53]
+        - generic [ref=e54]: Le cheval au cœur de nos activités
+        - generic "Réseaux sociaux" [ref=e55]:
+          - link "Instagram" [ref=e56] [cursor=pointer]:
+            - /url: https://www.instagram.com/
+          - link "Facebook" [ref=e57] [cursor=pointer]:
+            - /url: https://www.facebook.com/
+      - generic [ref=e58]:
+        - heading "Nous trouver" [level=5] [ref=e59]
+        - paragraph [ref=e60]:
+          - link "Château de Varennes" [ref=e61] [cursor=pointer]:
+            - /url: https://www.chateau-des-varennes.fr
+          - text: 31450 Varennes
+          - text: Haute-Garonne
+        - paragraph [ref=e62]:
+          - link "Visiter le site du château" [ref=e63] [cursor=pointer]:
+            - /url: https://www.chateau-des-varennes.fr
+      - generic [ref=e64]:
+        - heading "Nous contacter" [level=5] [ref=e65]
+        - paragraph [ref=e66]: ecuriesdesvarennes31@gmail.com
+        - paragraph [ref=e67]: +33 (0)X XX XX XX XX
+      - generic "Crédits du site" [ref=e68]:
+        - paragraph [ref=e69]: Designé Perrine Vivier
+        - paragraph [ref=e70]:
+          - text: Developped by
+          - link "Electronic Artefacts" [ref=e71] [cursor=pointer]:
+            - /url: https://github.com/onlythejoe
+          - text: (electronicartefacts)
+      - generic "Liens juridiques" [ref=e72]:
+        - link "Mentions légales" [ref=e73] [cursor=pointer]:
+          - /url: ../mentions-legales/
+        - link "Politique de confidentialité" [ref=e74] [cursor=pointer]:
+          - /url: ../politique-de-confidentialite/
+        - link "Cookies" [ref=e75] [cursor=pointer]:
+          - /url: ../politique-de-cookies/
+      - generic [ref=e76]: © 2026 Écuries des Varennes — Tous droits réservés

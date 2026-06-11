@@ -7,6 +7,9 @@
 - `le-domaine/index.html`
 - `galerie/index.html`
 - `contact/index.html`
+- `mentions-legales/index.html`
+- `politique-de-confidentialite/index.html`
+- `politique-de-cookies/index.html`
 
 ## Shared files
 
@@ -24,6 +27,9 @@ Each page has its own `images/` folder:
 - `le-domaine/images/`
 - `galerie/images/`
 - `contact/images/`
+- `mentions-legales/images/`
+- `politique-de-confidentialite/images/`
+- `politique-de-cookies/images/`
 
 Place editorial photos in numbered files:
 
@@ -39,3 +45,4 @@ Use the numbers in order. `1` is the first image shown, then `2`, and so on.
 
 - The root `index.html` is only a redirect to `home/` for GitHub Pages compatibility.
 - Shared logos stay in `/img` for now because they are reused site-wide.
+- The footer contains the canonical legal links for all pages.

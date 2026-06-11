@@ -602,6 +602,26 @@ img {
   text-decoration: none;
 }
 
+.legal-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  justify-content: center;
+  padding-top: 4px;
+  padding-bottom: 8px;
+}
+
+.legal-links a {
+  font-size: 11px;
+  color: #b8ae96;
+  text-decoration: none;
+}
+
+.legal-links a:hover,
+.legal-links a:focus-visible {
+  color: #e8ddb8;
+}
+
 .copy {
   border-top: 1px solid #1f4654;
   padding-top: 18px;
@@ -979,6 +999,42 @@ img {
 
 .contact-map .map-note {
   max-width: 280px;
+}
+
+.legal-prose {
+  max-width: 860px;
+  margin: 0 auto;
+  display: grid;
+  gap: 28px;
+  color: #3d3d3d;
+}
+
+.legal-prose h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--color-primary);
+  margin: 0 0 10px;
+}
+
+.legal-prose p,
+.legal-prose li {
+  font-size: 13px;
+  line-height: 1.9;
+  color: var(--color-muted);
+}
+
+.legal-prose ul {
+  margin: 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 8px;
+}
+
+.legal-note {
+  padding: 18px 20px;
+  border-left: 3px solid var(--color-primary);
+  background: rgba(20, 61, 72, 0.05);
 }
 
 @media (max-width: 1024px) {
