@@ -1,0 +1,3 @@
+[    1435ms] ReferenceError: loadIncludes is not defined
+    at init (https://ecuriesdesvarennes.github.io/ecuries-des-varennes/maquette_site_vitrine_ecuries_varennes.js:86:3)
+    at https://ecuriesdesvarennes.github.io/ecuries-des-varennes/maquette_site_vitrine_ecuries_varennes.js:94:8

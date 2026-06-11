@@ -27,19 +27,24 @@ const footerMarkup = `
         </a>
         <div class="tag">Le cheval au cœur de nos activités</div>
         <div class="socials" aria-label="Réseaux sociaux">
-          <a href="#" aria-label="Instagram"><i class="ti ti-brand-instagram" aria-hidden="true"></i></a>
-          <a href="#" aria-label="Facebook"><i class="ti ti-brand-facebook" aria-hidden="true"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="ti ti-brand-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="ti ti-brand-facebook" aria-hidden="true"></i></a>
         </div>
       </div>
       <div>
         <h5>Nous trouver</h5>
-        <p>Le Château<br />31450 Varennes<br />Haute-Garonne</p>
+        <p><a class="inline-link" href="https://www.chateau-des-varennes.fr" target="_blank" rel="noopener noreferrer">Château de Varennes</a><br />31450 Varennes<br />Haute-Garonne</p>
+        <p><a class="inline-link" href="https://www.chateau-des-varennes.fr" target="_blank" rel="noopener noreferrer">Visiter le site du château</a></p>
       </div>
       <div>
         <h5>Nous contacter</h5>
         <p>ecuriesdesvarennes31@gmail.com</p>
         <p>+33 (0)X XX XX XX XX</p>
       </div>
+    </div>
+    <div class="credits" aria-label="Crédits du site">
+      <p>Designé Perrine Vivier</p>
+      <p>Developped by <a href="https://github.com/onlythejoe" target="_blank" rel="noopener noreferrer">Electronic Artefacts</a> (electronicartefacts)</p>
     </div>
     <div class="copy">© 2026 Écuries des Varennes — Tous droits réservés · Mentions légales · Politique de confidentialité</div>
   </footer>
