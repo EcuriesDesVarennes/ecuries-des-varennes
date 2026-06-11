@@ -1,0 +1,73 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Écuries des Varennes" [ref=e3] [cursor=pointer]:
+      - /url: index.html
+      - img "Écuries des Varennes" [ref=e4]
+    - list [ref=e5]:
+      - listitem [ref=e6]:
+        - link "Accueil" [ref=e7] [cursor=pointer]:
+          - /url: index.html
+      - listitem [ref=e8]:
+        - link "Nos activités" [ref=e9] [cursor=pointer]:
+          - /url: nos-activites.html
+      - listitem [ref=e10]:
+        - link "Le domaine" [ref=e11] [cursor=pointer]:
+          - /url: le-domaine.html
+      - listitem [ref=e12]:
+        - link "Galerie" [ref=e13] [cursor=pointer]:
+          - /url: galerie.html
+      - listitem [ref=e14]:
+        - link "Contact" [ref=e15] [cursor=pointer]:
+          - /url: contact.html
+    - link "Réserver" [ref=e16] [cursor=pointer]:
+      - /url: contact.html
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]: Regards sur les Varennes
+      - heading "Galerie" [level=1] [ref=e20]
+      - paragraph [ref=e21]: Une sélection d'ambiances pour se projeter dans le lieu, les chevaux et les moments de vie qui rythment les écuries tout au long de l'année.
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e24]: Ambiances
+        - heading "Un aperçu du quotidien" [level=2] [ref=e25]
+      - paragraph [ref=e27]: Cette galerie est prête à accueillir vos photos. En attendant, elle sert de base élégante pour présenter les différents univers du domaine.
+      - generic [ref=e28]:
+        - figure [ref=e29]:
+          - generic [ref=e30]: Balade matinale
+        - figure [ref=e31]:
+          - generic [ref=e32]: Cours poney
+        - figure [ref=e33]:
+          - generic [ref=e34]: Départ en extérieur
+        - figure [ref=e35]:
+          - generic [ref=e36]: Repos au paddock
+        - figure [ref=e37]:
+          - generic [ref=e38]: Travail en carrière
+        - figure [ref=e39]:
+          - generic [ref=e40]: Sortie en calèche
+        - figure [ref=e41]:
+          - generic [ref=e42]: Temps calme à l'écurie
+        - figure [ref=e43]:
+          - generic [ref=e44]: Événement du domaine
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - generic [ref=e47]: À compléter
+        - heading "Photos, souvenirs et actualités" [level=2] [ref=e48]
+      - generic [ref=e50]:
+        - article [ref=e51]:
+          - generic [ref=e52]: "01"
+          - heading "Moments de balade" [level=3] [ref=e53]
+          - paragraph [ref=e54]: Images des promenades, des départs en forêt et des sorties en famille au rythme des saisons.
+        - article [ref=e55]:
+          - generic [ref=e56]: "02"
+          - heading "Vie de l'écurie" [level=3] [ref=e57]
+          - paragraph [ref=e58]: Photos du quotidien, des soins, du travail à pied et de la relation avec les chevaux.
+        - article [ref=e59]:
+          - generic [ref=e60]: "03"
+          - heading "Événements" [level=3] [ref=e61]
+          - paragraph [ref=e62]: Ventes, journées portes ouvertes, stages et instants partagés avec les cavaliers et les familles.
+    - generic [ref=e63]:
+      - generic [ref=e64]: Envie de voir le lieu en vrai ?
+      - heading "Le mieux reste encore de venir sur place" [level=2] [ref=e65]
+      - generic [ref=e66]: Nous vous montrerons le domaine
+      - link "Demander une visite" [ref=e67] [cursor=pointer]:
+        - /url: contact.html

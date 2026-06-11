@@ -1,0 +1,96 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Écuries des Varennes" [ref=e3] [cursor=pointer]:
+      - /url: index.html
+      - img "Écuries des Varennes" [ref=e4]
+    - list [ref=e5]:
+      - listitem [ref=e6]:
+        - link "Accueil" [ref=e7] [cursor=pointer]:
+          - /url: index.html
+      - listitem [ref=e8]:
+        - link "Nos activités" [ref=e9] [cursor=pointer]:
+          - /url: nos-activites.html
+      - listitem [ref=e10]:
+        - link "Le domaine" [ref=e11] [cursor=pointer]:
+          - /url: le-domaine.html
+      - listitem [ref=e12]:
+        - link "Galerie" [ref=e13] [cursor=pointer]:
+          - /url: galerie.html
+      - listitem [ref=e14]:
+        - link "Contact" [ref=e15] [cursor=pointer]:
+          - /url: contact.html
+    - link "Réserver" [ref=e16] [cursor=pointer]:
+      - /url: contact.html
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]: Un lieu singulier
+      - heading "Le domaine" [level=1] [ref=e20]
+      - paragraph [ref=e21]: Installées au pied du Château de Varennes, nos écuries s'inscrivent dans un cadre rural préservé, pensé pour le bien-être des chevaux et la qualité de l'accueil.
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - generic [ref=e26]: Histoire et ancrage
+          - heading "Une tradition équestre au Château de Varennes" [level=2] [ref=e27]
+        - paragraph [ref=e29]: Le domaine a grandi autour d'une passion durable pour le cheval. Lieu de vie, de travail et de rencontres, il réunit une cavalerie choisie avec soin, une équipe attentive et un environnement qui respire la campagne du Lauragais.
+        - paragraph [ref=e30]: Nous cherchons à offrir une équitation à la fois douce, claire et accessible, sans perdre l'exigence nécessaire au confort des chevaux et à la sécurité des cavaliers.
+        - list [ref=e31]:
+          - listitem [ref=e32]: • Accueil familial et accompagnement individualisé.
+          - listitem [ref=e33]: • Cavalerie adaptée aux enfants, aux débutants et aux cavaliers confirmés.
+          - listitem [ref=e34]: • Cadre naturel propice à la détente et à l'apprentissage.
+      - generic [ref=e35]: Le Château de Varennes
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - generic [ref=e38]: Ce qui nous guide
+        - heading "Trois priorités au quotidien" [level=2] [ref=e39]
+      - generic [ref=e41]:
+        - article [ref=e42]:
+          - heading "Relation" [level=3] [ref=e44]
+          - paragraph [ref=e45]: Créer une relation sereine avec le cheval, où la confiance et l'écoute passent avant la performance.
+        - article [ref=e46]:
+          - heading "Encadrement" [level=3] [ref=e48]
+          - paragraph [ref=e49]: Proposer un cadre pédagogique clair avec une encadrante diplômée et des chevaux préparés avec méthode.
+        - article [ref=e50]:
+          - heading "Cadre" [level=3] [ref=e52]
+          - paragraph [ref=e53]: Préserver un environnement naturel, aéré et paisible pour que les chevaux comme les visiteurs respirent mieux.
+    - generic [ref=e54]:
+      - generic [ref=e55]:
+        - generic [ref=e56]: Sur place
+        - heading "Des installations pensées pour le confort" [level=2] [ref=e57]
+      - generic [ref=e59]:
+        - article [ref=e60]:
+          - generic [ref=e61]: "01"
+          - heading "Des espaces calmes" [level=3] [ref=e62]
+          - paragraph [ref=e63]: Paddocks, zones de travail et espaces de repos sont organisés pour limiter le stress et fluidifier les routines quotidiennes.
+        - article [ref=e64]:
+          - generic [ref=e65]: "02"
+          - heading "Une arrivée simple" [level=3] [ref=e66]
+          - paragraph [ref=e67]: Le site est pensé pour accueillir les familles et les visiteurs sans complexité, avec des points de rencontre clairs et une signalétique lisible.
+    - generic [ref=e68]:
+      - generic [ref=e69]: Vous souhaitez découvrir le lieu ?
+      - heading "Venez nous rencontrer sur place" [level=2] [ref=e70]
+      - generic [ref=e71]: Nous vous accueillerons avec plaisir
+      - link "Prendre contact" [ref=e72] [cursor=pointer]:
+        - /url: contact.html
+  - contentinfo [ref=e73]:
+    - generic [ref=e74]:
+      - generic [ref=e75]:
+        - link "Écuries des Varennes" [ref=e76] [cursor=pointer]:
+          - /url: index.html
+          - img "Écuries des Varennes" [ref=e77]
+        - generic [ref=e78]: Le cheval au cœur de nos activités
+        - generic [ref=e79]:
+          - link "Instagram" [ref=e80] [cursor=pointer]:
+            - /url: "#"
+          - link "Facebook" [ref=e81] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=e82]:
+        - heading "Nous trouver" [level=5] [ref=e83]
+        - paragraph [ref=e84]:
+          - text: Le Château
+          - text: 31450 Varennes
+          - text: Haute-Garonne
+      - generic [ref=e85]:
+        - heading "Nous contacter" [level=5] [ref=e86]
+        - paragraph [ref=e87]: ecuriesdesvarennes31@gmail.com
+        - paragraph [ref=e88]: +33 (0)X XX XX XX XX
+    - generic [ref=e89]: © 2026 Écuries des Varennes — Tous droits réservés · Mentions légales · Politique de confidentialité

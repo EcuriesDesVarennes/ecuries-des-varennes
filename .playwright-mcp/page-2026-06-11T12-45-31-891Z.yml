@@ -1,0 +1,74 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Écuries des Varennes" [ref=e3] [cursor=pointer]:
+      - /url: index.html
+      - img "Écuries des Varennes" [ref=e4]
+    - list [ref=e5]:
+      - listitem [ref=e6]:
+        - link "Accueil" [ref=e7] [cursor=pointer]:
+          - /url: index.html
+      - listitem [ref=e8]:
+        - link "Nos activités" [ref=e9] [cursor=pointer]:
+          - /url: nos-activites.html
+      - listitem [ref=e10]:
+        - link "Le domaine" [ref=e11] [cursor=pointer]:
+          - /url: le-domaine.html
+      - listitem [ref=e12]:
+        - link "Galerie" [ref=e13] [cursor=pointer]:
+          - /url: galerie.html
+      - listitem [ref=e14]:
+        - link "Contact" [ref=e15] [cursor=pointer]:
+          - /url: contact.html
+    - link "Réserver" [ref=e16] [cursor=pointer]:
+      - /url: contact.html
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]: Prestations équestres
+      - heading "Nos activités" [level=1] [ref=e20]
+      - paragraph [ref=e21]: Des expériences pensées pour les familles, les cavaliers débutants comme confirmés, et les projets d'acquisition qui demandent un accompagnement sérieux.
+      - generic [ref=e22]:
+        - link "Réserver" [ref=e23] [cursor=pointer]:
+          - /url: contact.html
+        - link "Voir la galerie" [ref=e24] [cursor=pointer]:
+          - /url: galerie.html
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - generic [ref=e27]: Pour tous les publics
+        - heading "Une offre claire, familiale et encadrée" [level=2] [ref=e28]
+      - paragraph [ref=e30]: Nous privilégions la qualité de l'accueil, la sécurité et le lien avec le cheval. Chaque activité est adaptée à l'âge, au niveau et au temps disponible des visiteurs.
+      - generic [ref=e31]:
+        - article [ref=e32]:
+          - heading "Balades" [level=3] [ref=e34]
+          - paragraph [ref=e35]: Balades en main pour les plus petits, à cheval pour les plus grands, en calèche pour les sorties en groupe et formules dégustation selon la saison.
+        - article [ref=e36]:
+          - heading "Centre équestre" [level=3] [ref=e38]
+          - paragraph [ref=e39]: Découverte du poney dès 2 ans, cours d'initiation ou de perfectionnement, et accompagnement progressif dans une ambiance très familiale.
+        - article [ref=e40]:
+          - heading "Ventes aux enchères" [level=3] [ref=e42]
+          - paragraph [ref=e43]: Organisation de ventes équestres et coordination avec des professionnels du secteur pour des opérations cadrées et transparentes.
+        - article [ref=e44]:
+          - heading "Achat & vente" [level=3] [ref=e46]
+          - paragraph [ref=e47]: Conseils de sélection, mise en relation, accompagnement administratif et suivi du projet jusqu'à la mise en route de l'équidé.
+    - generic [ref=e48]:
+      - generic [ref=e49]:
+        - generic [ref=e50]: Comment ça se passe
+        - heading "Un parcours simple et rassurant" [level=2] [ref=e51]
+      - generic [ref=e53]:
+        - article [ref=e54]:
+          - generic [ref=e55]: "01"
+          - heading "On échange" [level=3] [ref=e56]
+          - paragraph [ref=e57]: Vous nous indiquez l'âge des participants, votre niveau et le type d'activité recherché. Nous vous orientons vers la formule la plus adaptée.
+        - article [ref=e58]:
+          - generic [ref=e59]: "02"
+          - heading "On prépare" [level=3] [ref=e60]
+          - paragraph [ref=e61]: Le cheval, le parcours et le matériel sont choisis en fonction des conditions météo, du groupe et du temps disponible sur place.
+        - article [ref=e62]:
+          - generic [ref=e63]: "03"
+          - heading "On profite" [level=3] [ref=e64]
+          - paragraph [ref=e65]: La séance se déroule dans le calme, avec un encadrement attentif et des consignes simples pour que chacun profite pleinement du moment.
+    - generic [ref=e66]:
+      - generic [ref=e67]: Une demande précise ?
+      - heading "Parlons de votre sortie ou de votre projet" [level=2] [ref=e68]
+      - generic [ref=e69]: Nous vous répondons rapidement
+      - link "Nous écrire" [ref=e70] [cursor=pointer]:
+        - /url: contact.html
