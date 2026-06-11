@@ -1,0 +1,62 @@
+- generic [active] [ref=e1]:
+  - link "Aller au contenu" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - main [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: Au cœur du Lauragais
+      - heading "Écuries des Varennes" [level=1] [ref=e6]
+      - paragraph [ref=e7]: Balades en pleine nature, centre équestre familial, ventes aux enchères et accompagnement dans vos projets d'acquisition équestre. Un lieu authentique où chaque cheval a sa place.
+      - generic [ref=e8]:
+        - link "Découvrir nos activités" [ref=e9] [cursor=pointer]:
+          - /url: nos-activites.html
+        - link "Réserver une balade" [ref=e10] [cursor=pointer]:
+          - /url: contact.html
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e13]: Notre savoir-faire
+        - heading "Nos activités" [level=2] [ref=e14]
+      - generic [ref=e16]:
+        - article [ref=e17]:
+          - heading "Balades" [level=3] [ref=e19]
+          - paragraph [ref=e20]: En main dès 3 ans, à cheval dès 7 ans, en calèche pour toute la famille et balades dégustation autour des produits locaux.
+          - link "En savoir plus" [ref=e21] [cursor=pointer]:
+            - /url: nos-activites.html
+        - article [ref=e22]:
+          - heading "Centre équestre" [level=3] [ref=e24]
+          - paragraph [ref=e25]: Cours encadrés par une enseignante diplômée, initiation dès 2 ans, tous niveaux dans un lieu familial et authentique.
+          - link "En savoir plus" [ref=e26] [cursor=pointer]:
+            - /url: nos-activites.html
+        - article [ref=e27]:
+          - heading "Ventes aux enchères" [level=3] [ref=e29]
+          - paragraph [ref=e30]: Organisation de ventes équestres en partenariat avec des commissaires-priseurs spécialisés du monde du cheval.
+          - link "En savoir plus" [ref=e31] [cursor=pointer]:
+            - /url: nos-activites.html
+        - article [ref=e32]:
+          - heading "Achat & vente" [level=3] [ref=e34]
+          - paragraph [ref=e35]: Équidés sélectionnés avec soin, conseils personnalisés et accompagnement de A à Z dans vos projets d'acquisition.
+          - link "En savoir plus" [ref=e36] [cursor=pointer]:
+            - /url: nos-activites.html
+    - generic [ref=e37]:
+      - generic [ref=e39]: — Photo du château —
+      - generic [ref=e40]:
+        - generic [ref=e41]: Le domaine
+        - heading "Une tradition équestre au Château de Varennes" [level=2] [ref=e42]
+        - paragraph [ref=e43]: Nichées au pied du Château de Varennes, nos écuries cultivent depuis plusieurs générations une passion sincère pour le cheval. Cavalerie joyeuse, équipe attentionnée et cadre enchanteur composent un lieu où chacun trouve sa place.
+        - paragraph [ref=e44]: Nous croyons en une équitation douce, respectueuse et accessible, fidèle à l'esprit du Lauragais.
+        - generic [ref=e45]: L'équipe des Varennes
+    - generic [ref=e46]:
+      - generic [ref=e47]:
+        - heading "Authenticité" [level=4] [ref=e48]
+        - paragraph [ref=e49]: Un cadre familial à taille humaine, loin des grosses structures industrielles.
+      - generic [ref=e50]:
+        - heading "Professionnalisme" [level=4] [ref=e51]
+        - paragraph [ref=e52]: Enseignante diplômée d'État et chevaux soigneusement sélectionnés.
+      - generic [ref=e53]:
+        - heading "Nature" [level=4] [ref=e54]
+        - paragraph [ref=e55]: Balades en pleine campagne, à la découverte des paysages du Lauragais.
+    - generic [ref=e56]:
+      - generic [ref=e57]: Venez nous rendre visite
+      - heading "Une balade, un cours, un projet ?" [level=2] [ref=e58]
+      - generic [ref=e59]: Nous serions ravies de vous accueillir
+      - link "Nous contacter" [ref=e60] [cursor=pointer]:
+        - /url: contact.html

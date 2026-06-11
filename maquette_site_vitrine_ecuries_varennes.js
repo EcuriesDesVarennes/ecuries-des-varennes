@@ -58,6 +58,10 @@ async function loadInclude(node) {
   }
 }
 
+async function loadIncludes() {
+  await Promise.all(Array.from(includes, loadInclude));
+}
+
 function setActiveNav() {
   const page = document.body.dataset.page;
   if (!page) return;

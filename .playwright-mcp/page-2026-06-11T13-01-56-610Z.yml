@@ -1,0 +1,65 @@
+- generic [active] [ref=e1]:
+  - link "Aller au contenu" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - main [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: Nous joindre
+      - heading "Contact" [level=1] [ref=e6]
+      - paragraph [ref=e7]: Pour réserver une balade, poser une question sur le centre équestre ou discuter d'un projet d'achat et de vente, écrivez-nous directement.
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - article [ref=e11]:
+          - heading "Nous écrire" [level=3] [ref=e12]
+          - paragraph [ref=e13]: Nous répondons rapidement aux demandes liées aux balades, aux cours et aux projets de vente ou d'acquisition.
+          - list [ref=e14]:
+            - listitem [ref=e15]:
+              - strong [ref=e16]: "Email :"
+              - text: ecuriesdesvarennes31@gmail.com
+            - listitem [ref=e17]:
+              - strong [ref=e18]: "Téléphone :"
+              - text: +33 (0)X XX XX XX XX
+            - listitem [ref=e19]:
+              - strong [ref=e20]: "Adresse :"
+              - text: Le Château, 31450 Varennes, Haute-Garonne
+        - article [ref=e21]:
+          - heading "Horaires" [level=3] [ref=e22]
+          - paragraph [ref=e23]: Les horaires d'accueil peuvent varier selon les activités et la saison. Merci de nous contacter avant votre venue.
+          - list [ref=e24]:
+            - listitem [ref=e25]: "Lundi au samedi : sur rendez-vous"
+            - listitem [ref=e26]: "Dimanche : selon les activités programmées"
+        - article [ref=e27]:
+          - generic [ref=e28]:
+            - heading "Accès" [level=3] [ref=e29]
+            - paragraph [ref=e30]: Cette zone est réservée à l'intégration d'une carte ou d'un plan d'accès si vous en ajoutez une plus tard.
+      - generic [ref=e31]:
+        - heading "Formulaire de contact" [level=3] [ref=e32]
+        - paragraph [ref=e33]: Décrivez votre demande en quelques lignes. Nous vous répondrons avec les informations utiles et les disponibilités.
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]:
+              - generic [ref=e37]: Nom
+              - textbox "Nom" [ref=e38]:
+                - /placeholder: Votre nom
+            - generic [ref=e39]:
+              - generic [ref=e40]: Téléphone
+              - textbox "Téléphone" [ref=e41]:
+                - /placeholder: Votre numéro
+            - generic [ref=e42]:
+              - generic [ref=e43]: Email
+              - textbox "Email" [ref=e44]:
+                - /placeholder: Votre adresse email
+            - generic [ref=e45]:
+              - generic [ref=e46]: Sujet
+              - textbox "Sujet" [ref=e47]:
+                - /placeholder: Balade, cours, vente...
+          - generic [ref=e48]:
+            - generic [ref=e49]: Message
+            - textbox "Message" [ref=e50]:
+              - /placeholder: Parlez-nous de votre demande
+          - button "Envoyer la demande" [ref=e51] [cursor=pointer]
+    - generic [ref=e52]:
+      - generic [ref=e53]: Besoin d'un retour rapide ?
+      - heading "Écrivez-nous, nous vous répondons dès que possible" [level=2] [ref=e54]
+      - generic [ref=e55]: Le plus simple est souvent le plus direct
+      - link "Envoyer un email" [ref=e56] [cursor=pointer]:
+        - /url: mailto:ecuriesdesvarennes31@gmail.com

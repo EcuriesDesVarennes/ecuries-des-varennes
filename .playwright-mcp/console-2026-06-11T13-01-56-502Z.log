@@ -1,0 +1,3 @@
+[      97ms] ReferenceError: loadIncludes is not defined
+    at init (http://127.0.0.1:8000/maquette_site_vitrine_ecuries_varennes.js:86:3)
+    at http://127.0.0.1:8000/maquette_site_vitrine_ecuries_varennes.js:94:8
