@@ -74,9 +74,19 @@ function setupHeroParallax() {
 
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const isMobileLayout = window.matchMedia('(max-width: 1024px)');
-  if (reducedMotion.matches || isMobileLayout.matches) {
+
+  const resetMotionVars = () => {
     hero.style.setProperty('--banner-bg-shift', '0px');
     hero.style.setProperty('--banner-horse-shift', '0px');
+    hero.style.setProperty('--banner-bg-drift-x', '0px');
+    hero.style.setProperty('--banner-bg-drift-y', '0px');
+    hero.style.setProperty('--banner-horse-drift-x', '0px');
+    hero.style.setProperty('--banner-horse-drift-y', '0px');
+    hero.style.setProperty('--banner-horse-tilt', '0deg');
+  };
+
+  if (reducedMotion.matches || isMobileLayout.matches) {
+    resetMotionVars();
     return;
   }
 
@@ -101,9 +111,25 @@ function setupHeroParallax() {
     window.requestAnimationFrame(update);
   };
 
+  const onPointerMove = (event) => {
+    const rect = hero.getBoundingClientRect();
+    if (!rect.width || !rect.height) return;
+
+    const x = clamp((event.clientX - rect.left) / rect.width - 0.5, -0.5, 0.5);
+    const y = clamp((event.clientY - rect.top) / rect.height - 0.5, -0.5, 0.5);
+
+    hero.style.setProperty('--banner-bg-drift-x', `${Math.round(x * -14)}px`);
+    hero.style.setProperty('--banner-bg-drift-y', `${Math.round(y * -8)}px`);
+    hero.style.setProperty('--banner-horse-drift-x', `${Math.round(x * 18)}px`);
+    hero.style.setProperty('--banner-horse-drift-y', `${Math.round(y * 8)}px`);
+    hero.style.setProperty('--banner-horse-tilt', `${(x * -1.1).toFixed(2)}deg`);
+  };
+
   update();
   window.addEventListener('scroll', onScroll, { passive: true });
   window.addEventListener('resize', onScroll);
+  hero.addEventListener('pointermove', onPointerMove, { passive: true });
+  hero.addEventListener('pointerleave', resetMotionVars);
 }
 
 async function init() {
