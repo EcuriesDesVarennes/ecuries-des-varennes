@@ -2,7 +2,7 @@
   <a class="logo" href="../home/" aria-label="Écuries des Varennes">
     <img src="../img/logo_ecurie_des_varennes.png" alt="Écuries des Varennes" width="1280" height="917" decoding="async" />
   </a>
-  <nav aria-label="Navigation principale">
+  <nav id="primary-navigation" class="nav-menu" aria-label="Navigation principale">
     <ul>
       <li><a data-nav="home" href="../home/">Accueil</a></li>
       <li><a data-nav="activities" href="../nos-activites/">Nos activités</a></li>
@@ -11,5 +11,12 @@
       <li><a data-nav="contact" href="../contact/">Contact</a></li>
     </ul>
   </nav>
-  <a href="../contact/" class="cta">Réserver</a>
+  <div class="nav-actions">
+    <a href="../contact/" class="cta">Réserver</a>
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-controls="primary-navigation" aria-expanded="false" data-menu-toggle>
+      <span class="sr-only">Ouvrir le menu</span>
+      <span class="nav-toggle__line" aria-hidden="true"></span>
+      <span class="nav-toggle__line" aria-hidden="true"></span>
+    </button>
+  </div>
 </header>

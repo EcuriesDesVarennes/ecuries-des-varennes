@@ -3,7 +3,7 @@ const CONTACT_EMAIL = 'ecuriesdesvarennes31@gmail.com';
 
 async function loadInclude(node) {
   try {
-    const response = await fetch(node.dataset.include, { credentials: 'same-origin' });
+    const response = await fetch(node.dataset.include, { credentials: 'same-origin', cache: 'no-cache' });
     if (!response.ok) {
       throw new Error(`Failed to load include: ${node.dataset.include}`);
     }
@@ -29,6 +29,46 @@ function setActiveNav() {
       link.setAttribute('aria-current', 'page');
     } else {
       link.removeAttribute('aria-current');
+    }
+  });
+}
+
+function setupMobileNav() {
+  const header = document.querySelector('.nav');
+  const toggle = header?.querySelector('[data-menu-toggle]');
+  const menu = header?.querySelector('#primary-navigation');
+  if (!header || !toggle || !menu) return;
+
+  const desktopLayout = window.matchMedia('(min-width: 721px)');
+
+  const setOpen = (isOpen) => {
+    header.classList.toggle('is-open', isOpen);
+    toggle.setAttribute('aria-expanded', String(isOpen));
+    toggle.setAttribute('aria-label', isOpen ? 'Fermer le menu' : 'Ouvrir le menu');
+  };
+
+  toggle.addEventListener('click', () => {
+    setOpen(!header.classList.contains('is-open'));
+  });
+
+  menu.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => setOpen(false));
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!header.classList.contains('is-open') || header.contains(event.target)) return;
+    setOpen(false);
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      setOpen(false);
+    }
+  });
+
+  desktopLayout.addEventListener('change', (event) => {
+    if (event.matches) {
+      setOpen(false);
     }
   });
 }
@@ -135,6 +175,7 @@ function setupHeroParallax() {
 async function init() {
   await loadIncludes();
   setActiveNav();
+  setupMobileNav();
   setupContactForm();
   setupHeroParallax();
 }
