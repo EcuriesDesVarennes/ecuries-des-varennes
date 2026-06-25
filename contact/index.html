@@ -19,7 +19,7 @@
     <link rel="preconnect" href="https://unpkg.com" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Allura&family=Montserrat:wght@300;400;500&display=swap" />
     <link rel="stylesheet" href="https://unpkg.com/@tabler/icons-webfont@latest/tabler-icons.min.css" />
-    <link rel="stylesheet" href="../maquette_site_vitrine_ecuries_varennes.css?v=10" />
+    <link rel="stylesheet" href="../maquette_site_vitrine_ecuries_varennes.css?v=12" />
   </head>
   <body class="site" data-page="contact">
     <a class="skip-link" href="#content">Aller au contenu</a>
@@ -38,10 +38,20 @@
               <h3>Nous écrire</h3>
               <p>Nous répondons rapidement aux demandes liées aux balades, aux cours et aux projets de vente ou d'acquisition. Plus votre message est précis, plus notre retour pourra l'être aussi.</p>
               <ul class="contact-list">
-                <li><strong>Email :</strong> ecuriesdesvarennes31@gmail.com</li>
+                <li><strong>Email :</strong> <a class="inline-link" href="mailto:ecuriesdesvarennes31@gmail.com">ecuriesdesvarennes31@gmail.com</a></li>
                 <li><strong>Téléphone :</strong> Numéro communiqué sur demande</li>
                 <li><strong>Adresse :</strong> <a class="inline-link" href="https://www.chateau-des-varennes.fr" target="_blank" rel="noopener noreferrer">Château de Varennes</a>, 31450 Varennes, Haute-Garonne</li>
               </ul>
+              <div class="contact-actions">
+                <a class="mini-action" href="mailto:ecuriesdesvarennes31@gmail.com?subject=Demande%20depuis%20le%20site">
+                  <i class="ti ti-mail" aria-hidden="true"></i>
+                  Envoyer un email
+                </a>
+                <a class="mini-action" href="https://www.google.com/maps/search/?api=1&query=Ch%C3%A2teau%20de%20Varennes%2031450%20Varennes" target="_blank" rel="noopener noreferrer">
+                  <i class="ti ti-map-2" aria-hidden="true"></i>
+                  Itinéraire
+                </a>
+              </div>
             </article>
             <article class="contact-card">
               <h3>Horaires</h3>
@@ -63,6 +73,27 @@
             <h3>Formulaire de contact</h3>
             <p>Décrivez votre demande en quelques lignes. Nous vous répondrons avec les informations utiles, les disponibilités et la suite la plus adaptée.</p>
             <form id="contact-form" action="mailto:ecuriesdesvarennes31@gmail.com" method="post" data-contact-form>
+              <fieldset class="request-type">
+                <legend>Votre demande</legend>
+                <div class="option-grid">
+                  <label class="choice-pill">
+                    <input type="radio" name="requestType" value="Balade" />
+                    <span>Balade</span>
+                  </label>
+                  <label class="choice-pill">
+                    <input type="radio" name="requestType" value="Cours" />
+                    <span>Cours</span>
+                  </label>
+                  <label class="choice-pill">
+                    <input type="radio" name="requestType" value="Achat / vente" />
+                    <span>Achat / vente</span>
+                  </label>
+                  <label class="choice-pill">
+                    <input type="radio" name="requestType" value="Vente aux enchères" />
+                    <span>Vente aux enchères</span>
+                  </label>
+                </div>
+              </fieldset>
               <div class="form-grid">
                 <div class="field">
                   <label for="name">Nom</label>
@@ -99,6 +130,6 @@
       </section>
     </main>
     <div data-include="../partials/footer.html"></div>
-    <script src="../maquette_site_vitrine_ecuries_varennes.js?v=10" defer></script>
+    <script src="../maquette_site_vitrine_ecuries_varennes.js?v=11" defer></script>
   </body>
 </html>

@@ -76,6 +76,14 @@ function setupMobileNav() {
 function setupContactForm() {
   const form = document.querySelector('[data-contact-form]');
   if (!form) return;
+  const subjectField = form.querySelector('#subject');
+
+  form.querySelectorAll('input[name="requestType"]').forEach((input) => {
+    input.addEventListener('change', () => {
+      if (!subjectField || subjectField.value.trim()) return;
+      subjectField.value = `Demande ${input.value.toLowerCase()}`;
+    });
+  });
 
   form.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -85,8 +93,9 @@ function setupContactForm() {
     }
 
     const formData = new FormData(form);
+    const requestType = String(formData.get('requestType') || '').trim();
     const rawSubject = String(formData.get('subject') || '').trim();
-    const subject = rawSubject || 'Demande depuis le site';
+    const subject = rawSubject || (requestType ? `Demande ${requestType.toLowerCase()} depuis le site` : 'Demande depuis le site');
     const name = String(formData.get('name') || '').trim();
     const phone = String(formData.get('phone') || '').trim();
     const email = String(formData.get('email') || '').trim();
@@ -95,6 +104,7 @@ function setupContactForm() {
     const bodyLines = [
       `Nom: ${name}`,
       `Email: ${email}`,
+      requestType ? `Type de demande: ${requestType}` : null,
       phone ? `Téléphone: ${phone}` : null,
       '',
       message,
